@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-5">
+    <div tabindex="-1" class="fixed inset-0 z-50 flex justify-center items-center w-full h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="p-4 md:p-5 text-center">
+                <div class="flex justify-between">
+                    <h3 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">Saldo</h3>
+                    <h3 class="mb-1 text-xl font-bold text-gray-900 dark:text-white" id="saldo" class="font-bold underline">Rp. 0,00</h3>
+                </div>
+                <hr>
+                <p class="text-gray-500 dark:text-gray-200 mb-6">Setting Saldo Anda Saat Ini<p>
+                <!-- Button -->
+                <div class="flex items-center justify-between mt-6 space-x-4 rtl:space-x-reverse">
+                    <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" onclick="tambahSaldo()">Tambah Saldo</button>
+                    <button type="button" class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800" onclick="kurangiSaldo()">Kurangi Saldo</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+    <script src="./index.js"></script>
+</body>
+</html>
